@@ -1,13 +1,12 @@
 import './App.css';
-import Hi from './components/hello';
-import MyFirstClass from './components/classcomponents';
+import Name from './components/Name';
 function App() {
+  function clicked() {
+    alert("button is clicked")
+  }
   return (
-    <div className="App">
-      <Hi />
-      <div>
-        <MyFirstClass />
-      </div>
+    <div className="container text-center">
+      <Name />
     </div>
   );
 }

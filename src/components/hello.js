@@ -1,8 +1,16 @@
 import React from "react";
 
-function Hi() {
+function Hi(props) {
+    function ClickMe(props) {
+        alert("button is clicked")
+    }
     return (
-        <h1>Hi guys</h1>
+        <div className="row">
+
+            < div className="col">
+                <h1>Hi guys my name is {props.name} {props.last_name}</h1>
+                <button className="btn btn-primary" onClick={ClickMe}>  click me  </button>
+            </div></div>
     )
 
 
