@@ -13,7 +13,7 @@ class Name extends Component {
         // this.setState({
         //     // name: "changed Name sagar "
         // })
-        if (this.state.name == "sagar sangwan") {
+        if (this.state.name === "sagar sangwan") {
             this.setState({
                 name: "sagar"
             })
