@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-
+import { Fragment } from "react";
 
 class Name extends Component {
     constructor() {
@@ -26,13 +26,10 @@ class Name extends Component {
 
     }
     render() {
-        return (
-            <div className="row">
-                <div className="col">
-                    <h1>{this.state.name}</h1>
-                    <button onClick={this.Changename} className="btn btn-success">change name </button>
-                </div>
-            </div>
+        return (<>
+            <h1>{this.state.name}</h1>
+            <button onClick={this.Changename} className="btn btn-success">change name </button>
+        </>
         )
     }
 }
