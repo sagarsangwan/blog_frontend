@@ -20,7 +20,7 @@ function App() {
     <div className="container text-center">
       <MyContext.Provider value={'hi, this is a value from app.js to component a that is in ComponentsB'}>
         {/* <ComponentsA /> */}
-        <Counter />
+        {/* <Counter /> */}
         <CounterHook />
       </MyContext.Provider>
 
